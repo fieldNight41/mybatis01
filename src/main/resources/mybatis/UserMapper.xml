@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis">
+    <!--新增用户-->
+    <insert id="addUser" parameterType="org.example.myBatisLearn.domain.User">
+        insert into user (id,username,birthday,sex,address)
+        values (#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <!--根据用户id删除用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
+
+    <!--根据用户id更新用户-->
+    <update id="updateUserById" parameterType="org.example.myBatisLearn.domain.User">
+        update user set username=#{username},sex=#{sex} where id = #{id}
+    </update>
+
+    <!--根据用户id查询-->
+    <select id="queryUserById" parameterType="int" resultType="org.example.myBatisLearn.domain.User">
+        select id,username,birthday,sex,address from user where id = #{id}
+    </select>
+
+    <!--方式一：根据用户名称模糊查询用户-->
+    <select id="queryUserByName1" parameterType="string" resultType="org.example.myBatisLearn.domain.User">
+        select id,username,birthday,sex,address from `user` where username like #{username}
+    </select>
+
+    <!--方式二：根据用户名称模糊查询用户-->
+    <select id="queryUserByName2" parameterType="string" resultType="org.example.myBatisLearn.domain.User">
+        select id,username,birthday,sex,address from `user` where username like  '%${value}%'
+    </select>
+
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="GBK"?>
+<School address="河南" schoolName="河南师范大学">
+    <fileBuildTime>2020年06月03日</fileBuildTime>
+    <studyTime>2013~2017</studyTime>
+    <College colegeName="生命科学学院">
+        <Class no="0212">
+            <name>提莫</name>
+            <age>4</age>
+            <sex>男</sex>
+            <academicYear1 year="第一学年">
+                <course courseName="C语言">92</course>
+                <course courseName="计算机基础">88</course>
+                <course courseName="高等数学">87</course>
+                <course courseName="英语">82</course>
+            </academicYear1>
+            <academicYear2 year="第二学年">
+                <course courseName="汇编">90</course>
+                <course courseName="离散数学">94</course>
+                <course courseName="线性代数">91</course>
+                <course courseName="模拟电路">96</course>
+            </academicYear2>
+            <academicYear3 year="第三学年">
+                <course courseName="计算机组成原理">88</course>
+                <course courseName="操作系统">92</course>
+                <course courseName="Java语言">97</course>
+                <course courseName="编译原理">84</course>
+            </academicYear3>
+            <academicYear4 year="第四学年">
+                <course courseName="C++语言">96</course>
+                <course courseName="信息安全">81</course>
+                <course courseName="密码学">80</course>
+                <course courseName="毕业设计">93</course>
+            </academicYear4>
+        </Class>
+    </College>
+    <College collegeName="外国语学院">
+        <language kind="English" />
+        <language kind="Japanese" />
+        <language kind="French" />
+        <language kind="German" />
+    </College>
+</School>

@@ -1,0 +1,342 @@
+INFO - 
+ buildXML() 方法组织好的 XML 文件为：
+******************************************
+outputter.outputString(xmlFileDocument)
+ ***************************************
+
+INFO - 应用 removeContent 方法移动节点 “studyTime” 后的效果。
+INFO - ************************ 分割线 ***********************************
+DEBUG - this is debug message。
+INFO - 第一个子节点 fileBuileTime 为：<fileBuildTime>2020年06月03日</fileBuildTime>
+INFO - 第一个子节点 fileBuileTime 的内容为：2020年06月03日
+INFO - D:\MyGitHubProjects\Mybatis-Learn\Mybatis001\JdomStudy\myHust-2020年06月03日.xml 文件中含有*16*个"course"节点
+
+这些节点的内容分别是：
+INFO - 第一学年的学习成绩：C语言:92
+INFO - 本程序的作者是：提莫
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第一学年的学习成绩：计算机基础:88
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第一学年的学习成绩：高等数学:87
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第一学年的学习成绩：英语:82
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第二学年的学习成绩：汇编:90
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第二学年的学习成绩：离散数学:94
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第二学年的学习成绩：线性代数:91
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第二学年的学习成绩：模拟电路:96
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第三学年的学习成绩：计算机组成原理:88
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第三学年的学习成绩：操作系统:92
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第三学年的学习成绩：Java语言:97
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第三学年的学习成绩：编译原理:84
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第四学年的学习成绩：C++语言:96
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第四学年的学习成绩：信息安全:81
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第四学年的学习成绩：密码学:80
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+INFO - 第四学年的学习成绩：毕业设计:93
+INFO - 本程序的作者是：IT搬砖
+INFO - 修改作者后本程序的作者是：IT搬砖
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: insert into user (id,username,birthday,sex,address) values (?,?,?,?,?) 
+DEBUG - ==> Parameters: 4(Integer), 林诗音(String), 2020-06-03 17:18:29.963(Timestamp), 女(String), 来自大明朝(String)
+DEBUG - <==    Updates: 1
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@670002]
+DEBUG - Returned connection 6750210 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: delete from user where id = ? 
+DEBUG - ==> Parameters: 1(Integer)
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: delete from user where id = ? 
+DEBUG - ==> Parameters: 1(Integer)
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: delete from user where id = ? 
+DEBUG - ==> Parameters: 26(Integer)
+DEBUG - <==    Updates: 1
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@670002]
+DEBUG - Returned connection 6750210 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: update user set username=?,sex=? where id = ? 
+DEBUG - ==> Parameters: 林诗音和小李飞刀(String), 1(String), 33(Integer)
+DEBUG - <==    Updates: 0
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@670002]
+DEBUG - Returned connection 6750210 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: update user set username=?,sex=? where id = ? 
+DEBUG - ==> Parameters: 林诗音和小李飞刀(String), 1(String), 33(Integer)
+DEBUG - <==    Updates: 0
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@670002]
+DEBUG - Returned connection 6750210 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 6750210.
+DEBUG - ==>  Preparing: update user set username=?,sex=? where id = ? 
+DEBUG - ==> Parameters: 林诗音和小李飞刀(String), 1(String), 38(Integer)
+DEBUG - <==    Updates: 1
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@670002]
+DEBUG - Returned connection 6750210 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from user where id = ? 
+DEBUG - ==> Parameters: 32(Integer)
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like ? 
+DEBUG - ==> Parameters: %小明%(String)
+DEBUG - <==      Total: 3
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=16, username=张小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=22, username=陈小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=25, username=陈小明, birthday=null, sex=1, address=河南郑州]
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Returned connection 524241174 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from user where id = ? 
+DEBUG - ==> Parameters: 32(Integer)
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from user where id = ? 
+DEBUG - ==> Parameters: 32(Integer)
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from user where id = ? 
+DEBUG - ==> Parameters: 4(Integer)
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from user where id = ? 
+DEBUG - ==> Parameters: 4(Integer)
+DEBUG - <==      Total: 1
+INFO - lcy--------根据用户id-32-查询用户：User [id=4, username=林诗音, birthday=Wed Jun 03 00:00:00 CST 2020, sex=女, address=来自大明朝]
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Returned connection 524241174 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like ? 
+DEBUG - ==> Parameters: %小明%(String)
+DEBUG - <==      Total: 3
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=16, username=张小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=22, username=陈小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=25, username=陈小明, birthday=null, sex=1, address=河南郑州]
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Returned connection 524241174 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 1264413185.
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like `%小明` 
+DEBUG - ==> Parameters: 
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 1264413185.
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like `%小明%` 
+DEBUG - ==> Parameters: 
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 1264413185.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b5d6a01]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like `%小明%` 
+DEBUG - ==> Parameters: 
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 1264413185.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b5d6a01]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like `小明` 
+DEBUG - ==> Parameters: 
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like ? 
+DEBUG - ==> Parameters: %小明%(String)
+DEBUG - <==      Total: 3
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=16, username=张小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=22, username=陈小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"%小明%"模糊查询：User [id=25, username=陈小明, birthday=null, sex=1, address=河南郑州]
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Returned connection 524241174 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 1264413185.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b5d6a01]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like '%小明%' 
+DEBUG - ==> Parameters: 
+DEBUG - <==      Total: 3
+INFO - lcy-------根据用户名称"小明"模糊查询：User [id=16, username=张小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"小明"模糊查询：User [id=22, username=陈小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"小明"模糊查询：User [id=25, username=陈小明, birthday=null, sex=1, address=河南郑州]
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b5d6a01]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b5d6a01]
+DEBUG - Returned connection 1264413185 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 524241174.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like ? 
+DEBUG - ==> Parameters: 小明(String)
+DEBUG - <==      Total: 0
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1f3f4916]
+DEBUG - Returned connection 524241174 to pool.
+DEBUG - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - PooledDataSource forcefully closed/removed all connections.
+DEBUG - Opening JDBC Connection
+DEBUG - Created connection 1238959340.
+DEBUG - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49d904ec]
+DEBUG - ==>  Preparing: select id,username,birthday,sex,address from `user` where username like '%小明%' 
+DEBUG - ==> Parameters: 
+DEBUG - <==      Total: 3
+INFO - lcy-------根据用户名称"小明"模糊查询：User [id=16, username=张小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"小明"模糊查询：User [id=22, username=陈小明, birthday=null, sex=1, address=河南郑州]
+INFO - lcy-------根据用户名称"小明"模糊查询：User [id=25, username=陈小明, birthday=null, sex=1, address=河南郑州]
+DEBUG - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49d904ec]
+DEBUG - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@49d904ec]
+DEBUG - Returned connection 1238959340 to pool.

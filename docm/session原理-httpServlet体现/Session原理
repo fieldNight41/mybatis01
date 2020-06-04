@@ -1,0 +1,106 @@
+**Session 原理**
+
+参考： [https://blog.csdn.net/weixin_42217767/article/details/92760353][https://blog.csdn.net/weixin_42217767/article/details/92760353]
+
+~~~
+开发工具与关键技术： Java、 HTTP 协议、 session 原理 。
+~~~
+
+Web 三大概念： cookie 、 session 、application
+
+Session: 记录一系列状态
+
+Session 与 Cookie 功能效果相同。Session 与 Cookie 的区别在于 Session 是记录在服务端的，而 Cookie 是记录在客户端的。
+
+**解释 Session:** 当访问服务器某个网页的时候，会在服务器端的内存里开辟一块内存，这块内存就叫做 session,而这个内存是跟浏览器绑定的。
+这个浏览器指的是浏览器窗口，或者是浏览器子窗口，意思就是，只允许当前这个 session 对应的浏览器访问，就算是在同一机器上新启动的浏览器也
+无法访问的。而另一个浏览器也需要记录 session 的话，就会再启一个属于自己的 session .
+
+**原理：** HTTP 协议是非连接性的，取完当前浏览器的内容，然后关系浏览器后，连接就断开了，而没有任何机制去记录取出后的信息。
+而当需要访问同一个网站的另一个页面时（就好比如在第一个页面选择购买商品后，跳转到第二个页面去进行付款）这个时候取出来的信息，就读不出来了。
+所以必须要有一种机制让页面知道原理页面的 session 内容。
+
+**问题：** 如何知道浏览器和这个服务器中的 session 是一一对应的呢？ 又如何保证不会去访问其他的 session 呢？
+
+**原理解答：** 就是当访问一个页面的时候给浏览器创建一个独一无二的号码，也给同时创建的 session 赋予同样的号码。这样就可以在打开同一个
+网站的第二个页面的时获取到第一个页面中 session 保留下来的对应信息 （理解：当访问第二个页面时将号码同时传递到第二个页面，找到对应的 session）
+这个号码也叫 sessionID ，session 的 ID 号码， session 独一无二号码。
+
+**session 的两种实现方式（也就是传递方式）：第一种通过 cookie 实现。第二种通过 URL 重写 来实现。**
+
+**第一种方式的理解：** 就是把session的id 放在cookie里面（为什么是使用cookies存放呢，因为cookie有临时的，也有定时的，
+临时的就是当前浏览器什么时候关掉即消失，也就是说session本来就是当浏览器关闭即消失的，所以可以用临时的cookie存放。
+保存再cookie里的sessionID一定不会重复，因为是独一无二的。），
+当允许浏览器使用cookie的时候，session就会依赖于cookies，当浏览器不支持cookie后，就可以通过第二种方式获取session内存中的数据资源。
+
+**第二种方式理解： 在客户端不支持 cookie 情况下使用。为了以防万一，也可以同时使用。**
+
+如果不支持 cookie ,必须自己编程使用 URL重写 的方式实现。
+    
+    如何重写 URL ：通过 response.encodeURL() 方法
+    encodeURL 的两个作用：
+        1. 转码 （说明：转中文的编码，或者一些其他特殊的编码。就好比如网页的链接中存在中文字符，就会转化成为一些百分号或者其他的符号代替。）
+        2. URL 后面加入 sessionID ,当不支持 cookie 的时候，可以使用 encodeURL() 方法， encodeURL() 后面跟上 sessionID ，
+        这样的话，在禁用 cookie 的浏览器中同时也可以使用 session 了。但是需要自己编程，只要连接支持，想用session就必须加上 encodeURL().
+        
+    提示： 若想在程序中永远支持 session ,那就必须加上 encodeURL(),当别人禁用了 cookie，一样可以使用 session .
+    
+**简单的代码示例：** 在没有使用 encodeURL() 方法前的代码
+    
+    out.println("<br><a href=" + "SessionInfoServlet" + ">refresh</a>");  
+    out.println("</body></html>");  
+
+在使用 encodeURL() 方法后的代码
+
+    out.println("<br><a href=" + response.encodeURL("SessionInfoServlet") + ">refesh</a>");
+    out.println("</body></html>");
+    
+看下图，当重写URL 的时候，每一次访问的时候都会将sessionID传过来，传过来了，就没有必要再在cookie里读了。  
+    http://localhost:8888/test/servlet/SessionInfoServlet;jsessionid=9559C10DFDEF73F2350C309F7A988
+
+    Session Information
+
+    NEW Session:false
+    Session ID:955...
+    Session Creation Time:Sat Apr 28 09:49:06 CST 2007
+    Session Last Accessed Time: Sat Apr 28 09:49:06 CST 2007
+
+    Request Information
+
+    Session ID from Request:955..
+    Session ID via Cookie:false
+    Session ID via rewritten URL:true
+    Valid Session ID:true
+
+**规则：**  
+
+    1. 如果浏览器支持cookie，创建session多大的时候，会被sessionID保存再cookie里。只要允许cookie，session就不会改变，如果不允许使用cookie，每刷新一次浏览器就会换一个session（因为浏览器以为这是一个新的链接）
+    2. 如果不支持cookie，必须自己编程使用URL重写的方式实现session
+    3. Session 不像 cookie 一样，拥有路径访问的问题，同一个 application 下的 servlet/jsp 都可以共享同一个 session，前提下是同一个客户端窗口。
+    
+**Session 中的一些常用方法说明：**   
+
+isNew(): 是否是新的 Session ，一般在第一次访问的时候出现
+
+getid(): 拿到 session ,获取 ID
+
+getCreationTime()：当前session创建的时间
+
+getLastAccessedTime()：最近的一次访问这个session的时间。
+
+getRequestedSessionid： 跟随上个网页cookies或者URL传过来的session
+
+isRequestedSessionIdFromCookie()：是否通过Cookies传过来的
+
+isRequestedSessionIdFromURL()：是否通过重写URL传过来的
+
+isRequestedSessionIdValid()：是不是有效的sessionID
+
+**其对应的代码：**   
+
+    
+
+
+
+
+[https://blog.csdn.net/weixin_42217767/article/details/92760353]: https://blog.csdn.net/weixin_42217767/article/details/92760353
