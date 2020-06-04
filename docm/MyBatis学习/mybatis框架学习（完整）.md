@@ -26,6 +26,16 @@
     加载依赖： mybatis-3.5.4.jar 、mysql-8.0.20.jar、junit-4.12.jar
     加载log4j日志包：slf4j-api-1.7.29 、log4j-1.7.27.jar 、slf4j-log4j12-1.7.21.jar 
     
+    说明： 因为 写 Heepservlet 时，引入了 tomcat 依赖包，
+         <!--2020-5-25 测试 sessionTest 包中的 SessionInfoServlet 继承 HttpServlet 
+           依赖9.0.29时，git提示该版本存在严重的安全漏洞，建议升级到9.0.35或更高版本
+           https://github.com/fieldNight41/mybatis01/network/alert/pom.xml/org.apache.tomcat.embed:tomcat-embed-core/open -->
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-core</artifactId>
+      <version>9.0.35</version>
+    </dependency>
+    
 ### 3.2 sqlMapConfig.xml 配置文件，是 mybatis 框架的核心配置文件
     <?xml version="1.0" encoding="UTF-8" ?>
     <!DOCTYPE configuration
