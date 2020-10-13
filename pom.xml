@@ -41,7 +41,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.1</version>
     </dependency>
 
     <!--2020-5-25 测试 sessionTest 包中的 SessionInfoServlet 继承 HttpServlet
