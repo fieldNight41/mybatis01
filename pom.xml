@@ -19,7 +19,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
 
     <!--2020-5-22 Mysql 依赖 -->
-    <mysql.version>8.0.20</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
   </properties>
 
   <dependencies>
